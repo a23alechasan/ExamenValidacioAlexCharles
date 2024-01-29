@@ -25,5 +25,8 @@ class SopaDeLLetresTest {
     @Test
     void crearSopaDeLletresRecursiuTest(){
         assertEquals('A', crearSopaDeLletresRecursiuTest(SopaDeLLetres.matriu, cadena, 0, 0));
+        assertEquals('C', crearSopaDeLletresRecursiuTest(SopaDeLLetres.matriu, cadena, 0, 3));
+        assertNotEquals('R', crearSopaDeLletresRecursiuTest(SopaDeLLetres.matriu, cadena, 0, 4));
+        assertNotEquals('A', crearSopaDeLletresRecursiuTest(SopaDeLLetres.matriu, cadena, 1, 5));
     }
 }
